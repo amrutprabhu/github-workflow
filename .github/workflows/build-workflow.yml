@@ -30,7 +30,15 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Setup Java JDK
+        uses: actions/setup-java@v2.3.1
+        with:
+          java-version: 16.0
+
+      - name: java version
+        run: java -version
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+          
