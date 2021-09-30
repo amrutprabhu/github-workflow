@@ -40,6 +40,6 @@ jobs:
         run: java -version
 
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: mvn --version
 
           
